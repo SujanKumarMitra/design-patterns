@@ -6,9 +6,9 @@ package org.practice.designpatterns.designprinciples.singleresponsibility;
  */
 public class ArrayUtil {
 
-	LinearSearch linearSearchUtil;
-	BinarySearch binarySearchUtil;
-	MergeSort sortUtil;
+	private LinearSearch linearSearchUtil;
+	private BinarySearch binarySearchUtil;
+	private MergeSort sortUtil;
 
 	public ArrayUtil() {
 		linearSearchUtil = new LinearSearch();
@@ -21,7 +21,7 @@ public class ArrayUtil {
 	}
 
 	public int binarySearch(int[] arr, int element) {
-		return linearSearchUtil.search(arr, element);
+		return binarySearchUtil.search(arr, element);
 	}
 
 	public void sort(int[] arr) {

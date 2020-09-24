@@ -5,7 +5,7 @@ package org.practice.designpatterns.designprinciples.programmingtoaninterface;
  * @since 2020-09-24
  */
 public class Computer {
-	DisplayModule displayModule;
+	private DisplayModule displayModule;
 
 	public void setDisplayModule(DisplayModule displayModule) {
 		this.displayModule = displayModule;

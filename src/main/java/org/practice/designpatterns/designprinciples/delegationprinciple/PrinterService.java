@@ -6,7 +6,7 @@ package org.practice.designpatterns.designprinciples.delegationprinciple;
  */
 public class PrinterService {
 
-	Printer printer;
+	private Printer printer;
 
 	public PrinterService(Printer printer) {
 		this.printer = printer;
