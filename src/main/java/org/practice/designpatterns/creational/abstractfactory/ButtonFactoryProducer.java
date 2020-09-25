@@ -4,7 +4,7 @@ package org.practice.designpatterns.creational.abstractfactory;
  * @author Sujan Kumar Mitra
  * @since 2020-09-25
  */
-public class ButtonFactoryBuilder {
+public class ButtonFactoryProducer {
 
 	public static AbstractButtonFactory getButtonFactory() {
 		String os = System.getProperty("os.name").toLowerCase();

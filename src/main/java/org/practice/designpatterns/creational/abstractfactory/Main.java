@@ -9,7 +9,7 @@ public class Main {
 		AbstractButtonFactory buttonFactory = null;
 		Button button = null;
 		
-		buttonFactory = ButtonFactoryBuilder.getButtonFactory();
+		buttonFactory = ButtonFactoryProducer.getButtonFactory();
 		button = buttonFactory.createButton();
 		button.click();
 
