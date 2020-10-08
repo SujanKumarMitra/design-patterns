@@ -54,7 +54,6 @@ public class CricketData extends AbstractSubject {
 	}
 
 	@Override
-	@SuppressWarnings("unchecked")
 	public Supplier<CricketData> getState() {
 		return () -> this;
 	}

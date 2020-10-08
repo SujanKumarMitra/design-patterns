@@ -8,7 +8,7 @@ import java.util.function.Supplier;
  */
 public interface Subject {
 
-	<T> Supplier<T> getState();
+	Supplier<?> getState();
 
 	boolean addObserver(Observer observer);
 
