@@ -34,6 +34,20 @@ public class Main {
 		printArray(array);
 		sorter.sort(array);
 		printArray(array);
+
+		sorter.setStrategy(MergeSort.getInstance());
+
+		array = getArray();
+		printArray(array);
+		sorter.sort(array);
+		printArray(array);
+
+		sorter.setStrategy(QuickSort.getInstance());
+
+		array = getArray();
+		printArray(array);
+		sorter.sort(array);
+		printArray(array);
 	}
 
 	private static void printArray(Integer[] array) {
